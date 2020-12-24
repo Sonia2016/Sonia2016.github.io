@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  
+
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>MEDIRL-EyeCar | MEDIRL-EyeCar-web</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="MEDIRL-EyeCar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="MEDIRL: Predicting the Visual Attention of Drivers via Maximum Entropy Deep Inverse Reinforcement Learning" />
+<meta property="og:description" content="MEDIRL: Predicting the Visual Attention of Drivers via Maximum Entropy Deep Inverse Reinforcement Learning" />
+<meta property="og:site_name" content="MEDIRL-EyeCar-web" />
+<script type="application/ld+json">
+{"description":"MEDIRL: Predicting the Visual Attention of Drivers via Maximum Entropy Deep Inverse Reinforcement Learning","@type":"WebSite","headline":"robosuite","url":"https://soniabaee.github.io/projects/medirl-eyecar.html","name":"MEDIRL-EyeCar-web","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="https://robosuite.ai/assets/css/style.css?v=ac6bb3bc266ae2f7e36177a4698a620c389ed387">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+  </head>
+  
+  <body>
+
+    <!-- <a class="github-fork-ribbon" href="https://github.com/soniabaee/MEDIRL-EyeCar" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> -->
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">MEDIRL</h1>
+      <h1 class="project-subtitle"></h1>
+      <h2 class="project-tagline">Predicting the Visual Attention of Drivers via Maximum Entropy Deep Inverse Reinforcement Learning</h2>
+      <a href="https://soniabaee.github.io" class="btn">Home (Projects)</a>
+      <a href="https://github.com/soniabaee/MEDIRL-EyeCar" class="btn">Github</a>
+      <a href="https://arxiv.org/abs/1912.07773" class="btn">Arxiv</a>
+      <a href="https://github.com/soniabaee/MEDIRL-EyeCar/tree/master/EyeCar" class="btn">EyeCar</a>
+
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <p><img src="paper8.png" alt="MEDIRL" /></p>
+
+<p><strong>MEDIRL</strong> is a framework for modeling the visual attention allocation of drivers in imminent rear-end collisions. MEDIRL is composed of <i>visual</i>, <i>driving</i>, and <i>attention</i> modules. Given a front-view driving video and corresponding eye fixations from humans, the visual and driving modules extract generic and driving-specific visual features, respectively. Finally, the attention module learns the intrinsic task-sensitive reward functions induced by eye fixation policies recorded from attentive drivers. MEDIRL uses the learned policies to predict visual attention allocation of drivers. We also introduce EyeCar, a new driver visual attention dataset during accident-prone situations. We conduct comprehensive experiments and show that MEDIRL outperforms previous state-of-the-art methods on driving task-related visual attention allocation on the following large-scale driving attention benchmark datasets: DR(eye)VE, BDD-A, and DADA-2000. </p>
+
+<h1 id="video-overview">Project Overview</h1>
+  <p><img src="visual.png" alt="visual module" /></p>
+  <p><img src="driving-attention.png" alt="driving and attention modules" /></p>
+<!-- Feel free to change the width and height to your desired video size. -->
+
+<!-- <div class="embed-container">
+  <iframe width="640" height="480" src="paper8.png" frameborder="0" allowfullscreen="">
+  </iframe>
+</div> -->
+
+<h1 id="team">Team</h1>
+
+<div class="col-lg-12 clearfix">
+  <div class="col-xs-2 authornames">
+    <a href="http://soniabaee.com/" align="middle">
+      <img src="sonia_baee.jpeg" class="img-circle img-responsive" width="150" height="150"/>
+      Sonia Baee
+    </a>
+  </div>
+  <div class="col-xs-2 authornames">
+    <a href="https://www.jowo.me" align="middle">
+      <img src="erfan_pak.jpeg" class="img-circle img-responsive" width="150" height="150"/>
+      Erfan Pakdamanian
+    </a>
+  </div>
+  <div class="col-xs-2 authornames">
+    <a href="http://www.sys.virginia.edu/inki-kim.html" align="middle" >
+      <img src="inki_kim.jpeg" class="img-circle img-responsive" width="150" height="20"/>
+      Inki Kim
+    </a>
+  </div>
+  <div class="col-xs-2 authornames">
+    <a href="http://www.cs.virginia.edu/~lufeng/" align="middle">
+      <img src="lu_feng.jpeg" class="img-circle img-responsive" />
+      Lu Feng
+    </a>
+  </div>
+  <div class="col-xs-2 authornames">
+    <a href="https://www.vicenteordonez.com" align="middle">
+      <img src="vicente_ordonez.jpeg" class="img-circle img-responsive" />
+      Vicente Ordonez Roman
+    </a>
+  </div>
+  <div class="col-xs-2 authornames">
+    <a href="http://www.lauraebarnes.com" align="middle">
+      <img src="laura_barnes.jpeg" class="img-circle img-responsive" />
+      Laura Barnes
+    </a>
+  </div>
+</div>
+
+<h1 id="citation">Citation</h1>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">baee2019eyecar</span><span class="p">,</span>
+  <span class="na">title</span><span class="p">=</span><span class="s">{EyeCar: Modeling the Visual Attention Allocation of Drivers in Semi-Autonomous Vehicles}</span><span class="p">,</span>
+  <span class="na">author</span><span class="p">=</span><span class="s">{Baee, Sonia and Pakdamanian, Erfan and Roman, Vicente Ordonez and Kim, Inki and Feng, Lu and Barnes, Laura}</span><span class="p">,</span>
+  <span class="na">booktitle</span><span class="p">=</span><span class="s">{arXiv preprint arXiv:1912.07773}</span><span class="p">,</span>
+  <span class="na">year</span><span class="p">=</span><span class="s">{2019}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+      <footer class="site-footer">
+        <span class="site-footer-owner">
+            &copy; Copyright University of Virginia 2020, Web template from <a href="https://robosuite.ai/">robosuite</a> 
+        </span>
+      </footer>
+    </main>
+  </body>
+</html>
