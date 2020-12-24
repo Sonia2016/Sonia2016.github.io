@@ -409,15 +409,15 @@ span.pub_info, span.pub_info a{
  * Footer
  */
 .page-footer {
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   color: #999;
   text-align: center;
   background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
-  margin:0;
+  border-top: .3rem solid #e5e5e5;
+  margin:10;
 }
 .page-footer p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 2;
 }
 
 * {
