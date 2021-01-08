@@ -8,8 +8,7 @@
     
     <meta charset="UTF-8">
 
-    <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>MEDIRL-EyeCar | MEDIRL-EyeCar-web</title>
+<title>MEDIRL-EyeCar | Project</title>
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="MEDIRL-EyeCar" />
 <meta property="og:locale" content="en_US" />
@@ -18,7 +17,6 @@
 <meta property="og:site_name" content="MEDIRL-EyeCar-web" />
 <script type="application/ld+json">
 {"description":"MEDIRL: Predicting the Visual Attention of Drivers via Maximum Entropy Deep Inverse Reinforcement Learning","@type":"WebSite","headline":"robosuite","url":"https://soniabaee.github.io/projects/medirl-eyecar.html","name":"MEDIRL-EyeCar-web","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
@@ -36,10 +34,10 @@
       <h1 class="project-name">MEDIRL</h1>
       <h1 class="project-subtitle"></h1>
       <h2 class="project-tagline">Predicting the Visual Attention of Drivers via Maximum Entropy Deep Inverse Reinforcement Learning</h2>
-      <a href="https://arxiv.org/pdf/1912.07773.pdf" class="btn"> pdf </a>
-      <a href="https://github.com/soniabaee/MEDIRL-EyeCar" class="btn">Github</a>
-      <a href="https://arxiv.org/abs/1912.07773" class="btn">Arxiv</a>
-      <a href="https://github.com/soniabaee/MEDIRL-EyeCar/tree/master/EyeCar" class="btn">EyeCar</a>
+      <a href="https://arxiv.org/pdf/1912.07773.pdf" class="btn" target="_blank"> pdf </a>
+      <a href="https://github.com/soniabaee/MEDIRL-EyeCar" class="btn" target="_blank">github</a>
+      <a href="https://arxiv.org/abs/1912.07773" class="btn" target="_blank">arxiv</a>
+      <a href="https://github.com/soniabaee/MEDIRL-EyeCar/tree/master/EyeCar" class="btn" target="_blank">EyeCar</a>
 
     </header>
 
@@ -48,65 +46,67 @@
 
 <p><strong>MEDIRL</strong> is a framework for modeling the visual attention allocation of drivers in imminent rear-end collisions. MEDIRL is composed of <i>visual</i>, <i>driving</i>, and <i>attention</i> modules. Given a front-view driving video and corresponding eye fixations from humans, the visual and driving modules extract generic and driving-specific visual features, respectively. Finally, the attention module learns the intrinsic task-sensitive reward functions induced by eye fixation policies recorded from attentive drivers. MEDIRL uses the learned policies to predict visual attention allocation of drivers. We also introduce EyeCar, a new driver visual attention dataset during accident-prone situations. We conduct comprehensive experiments and show that MEDIRL outperforms previous state-of-the-art methods on driving task-related visual attention allocation on the following large-scale driving attention benchmark datasets: DR(eye)VE, BDD-A, and DADA-2000. </p>
 
+<hr class="hr-round">
 <h2 id="project-overview"><strong>Project Overview</strong></h2>
 <p><strong><a href="https://github.com/soniabaee/eyeCar/tree/master/EyeCar">EyeCar Dataset</strong>:</a> We select 21 front-view videos that were captured in various traffic, weather, and day light conditions. Each video is 30sec in length and contains typical driving tasks (e.g., lane-keeping, merging-in, and braking) ending to rear-end collisions. Note that all the conditions were counterbalanced among all the participants. Moreover, EyeCar provides information about the speed and GPS of the ego-vehicle. In addition, each video frame comprises 4.6 vehicles on average, making EyeCar driving scenes more complex than other visual attention datasets. The <a href="https://github.com/soniabaee/eyeCar/tree/master/EyeCar">EyeCar</a> dataset contains 3.5h of gaze behavior (aggregated and raw) from the 20 participants, as well as more than 315,000 rear-end collisions video frames. In EyeCar dataset, we account for the sequence of eye fixations, and thus we emphasize on attention shift to the salient regions in a complex driving scene. EyeCar also provides a rich set of annotations(e.g., scene tagging, object bounding, lane marking, etc.). Compared to prior datasets, EyeCar is the only dataset captured from a point-of-view (POV) perspective, involving collisions, and including metadata for both speedand GPS. EyeCar also has the largest average number of vehicles per scene, and gaze data for 20 participants.</p>
 <p style="text-align: center;"><img src="eyeCar.png" alt="EyeCar dataset" /></p>
 <br>
-<br>
+<hr class="hr-round">
 <p><strong>MEDIRL - Module 1. The visual module</strong>: The visual module extracts low and mid-level visual cues that are useful for a variety of visual attention tasks. We rely on pre-existing models for semantic and instance segmentation, as well as depth estimation. In addition, we propose an approach to detect brake lights and traffic lights.</p>
 <p><img src="visual.png" alt="visual module" /></p>
 <br>
-<br> 
+<hr class="hr-round">
 <p><strong>MEDIRL - Module 2. The driving module</strong>: The driving module extracts driving-specific visual features for driving tasks.
 </p>
 <p><img src="driving.png" alt="driving module" /></p>
 <br>
-<br>
+<hr class="hr-round">
 <p><strong>MEDIRL - Module 3. The attention module</strong>: Drivers pay attention to the task-related regions of the scene to filter out irrelevant information and ultimately make optimal decisions. Drivers do this with a sequence of eye fixations. To learn this process in various driving tasks ending in rear-end collisions, we cast it as a maximum inverse reinforcement learning approach.</p>
 <p><img src="attention.png" alt="attention module" /></p>
 <br>
 <br> 
+<hr class="hr-round">
 <p><strong>Some results: </strong>
 </p>
 <p><img src="results.png" alt="result" /></p>
 
 
-
+<hr class="hr-round">
 <h1 id="team">Team</h1>
 
 <div class="col-lg-12 clearfix">
   <div class="col-xs-2 authornames">
-    <a href="http://soniabaee.com/" align="middle">
+    <a href="http://soniabaee.com/" align="middle" target="_blank">
       <img src="team/sonia_baee.jpeg" class="img-circle img-responsive" width="150" height="150"/>
       Sonia Baee
     </a>
   </div>
   <div class="col-xs-2 authornames">
-    <a href="http://www.cs.virginia.edu/~ep2ca/" align="middle">
+    <a href="http://www.cs.virginia.edu/~ep2ca/" align="middle" target="_blank">
       <img src="team/erfan_pak.png" class="img-circle img-responsive" width="150" height="150"/>
       Erfan Pakdamanian
     </a>
   </div>
   <div class="col-xs-2 authornames">
-    <a href="http://www.sys.virginia.edu/inki-kim.html" align="middle" >
+    <a href="http://www.sys.virginia.edu/inki-kim.html" align="middle" target="_blank">
       <img src="team/inki_kim.png" class="img-circle img-responsive" width="150" height="20"/>
       Inki Kim
     </a>
   </div>
   <div class="col-xs-2 authornames">
-    <a href="http://www.cs.virginia.edu/~lufeng/" align="middle">
+    <a href="http://www.cs.virginia.edu/~lufeng/" align="middle" target="_blank">
       <img src="team/lu_feng.png" class="img-circle img-responsive" />
       Lu Feng
     </a>
   </div>
   <div class="col-xs-2 authornames">
-    <a href="https://www.vicenteordonez.com" align="middle">
+    <a href="https://www.vicenteordonez.com" align="middle" target="_blank">
       <img src="team/vicente_ordonez.jpeg" class="img-circle img-responsive" />
       Vicente Ordonez Roman
     </a>
   </div>
   <div class="col-xs-2 authornames">
-    <a href="https://faculty.virginia.edu/S2HeLab/index.php" align="middle">
+    <a href="https://faculty.virginia.edu/S2HeLab/index.php" align="middle" target="_blank">
       <img src="team/laura_barnes.jpeg" class="img-circle img-responsive" />
       Laura Barnes
     </a>
