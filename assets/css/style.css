@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'Raleway';
     src: url('../css/OpenSans-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
@@ -29,7 +29,7 @@
 }
 
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'Raleway';
     src: url('../css/OpenSans-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
