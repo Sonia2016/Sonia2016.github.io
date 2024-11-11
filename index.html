@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonia Baee</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            color: #2c3e50;
+            background-color: #ffffff;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #2980b9;
+        }
+
+        header {
+            margin: 3rem 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            margin: 2rem 0;
+        }
+
+        nav a {
+            margin-right: 1.5rem;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        section {
+            margin: 4rem 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .news-item, .publication {
+            margin-bottom: .3rem;
+            padding-left: 0.5rem;
+            position: relative;
+        }
+
+        .news-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2980b9;
+        }
+
+        .date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-right: 0.3rem;
+        }
+
+        .publication {
+            padding-left: 0;
+        }
+
+        .authors {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+
+        .venue {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        .highlight {
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .tags {
+            margin-top: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #f0f2f5;
+            padding: 0.2rem 0.6rem;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #636e72;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        .contact-links {
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            margin-right: 1rem;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .research-interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin-top: .5rem;
+        }
+
+        .research-area {
+            flex: 1 1 300px;
+        }
+
+        .project {
+            margin-bottom: .1rem;
+        }
+
+        .project h3 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #2c3e50;
+            background-color: #ffffff;
+        }
+
+        /* Modified header styles */
+        header {
+            margin: 3rem 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 0 1rem 0;
+            color: #2c3e50;
+        }
+
+        .header-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-image {
+            flex: 0 0 auto;
+            padding-top: 0.5rem;
+        }
+
+        .profile-image {
+            width: 400px;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            margin: 2rem 0 0 0;
+        }
+
+        nav a {
+            margin-right: 1.5rem;
+            color: #2c3e50;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom-color 0.2s;
+        }
+
+        nav a:hover {
+            border-bottom-color: #2980b9;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header-image {
+                margin-bottom: 1.5rem;
+            }
+
+            .profile-image {
+                width: 180px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sonia Baee</h1>
+        <div class="header-content">
+            <div class="header-text">
+                <div class="subtitle">Machine Learning Engineer and Researcher</div>
+                <div class="subtitle">Photoshop | Adobe</div>
+                <div class="subtitle">PhD, UVA</div>
+            </div>
+            <div class="header-image">
+                <img src="images/SoniaBaee-profile.jpg" alt="Profile photo" class="profile-image">
+            </div>
+        </div>
+        <nav>
+            <a href="#research">Research</a>
+            <a href="#news">News</a>
+            <!-- <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a> -->
+            <a href="#hobbies">Hobbies</a>
+        </nav>
+    </header>
+
+    <section id="research">
+        <h2>Research Interests</h2>
+        <div class="research-interests">
+            <div class="research-area">
+                <h3>Data, Synthetic Data Generation</h3>
+                <p>Understanding data and developing methodologies for generating diverse, realistic training, and evaluation data.</p>
+            </div>
+            <div class="research-area">
+                <h3>Evaluation Metrics and Data Analytics</h3>
+                <p>Developing insightful quantitative metrics for interaction quality.</p>
+            </div>
+            <div class="research-area">
+                <h3>MLLM-Ops</h3>
+                <p>Try to answer: <br> How can we unleach capabilities of MLLM in data enrichment, evaluation, and annotation.</p>
+            </div>
+            <div class="research-area">
+                <h3>User behavior</h3>
+                <p>Try to answer: <br> Can we utilize user meta data to improve the functionalities of the model.</p>
+            </div>
+            <div class="research-area">
+                <h3>Reinforcement Learning - Reward Hacking</h3>
+                <p>Developing efficient algorithms for complex decision-making processes.Can we learn from user activities to hack the reward function</p>
+            </div>
+            <div class="research-area">
+                <h3>Machine Learning Theory</h3>
+                <p>Keep learning of theoretical foundations and mathematical frameworks for ML algorithms.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="news">
+        <h2>News</h2>
+        <div class="news-item">
+            <span class="date">[March 2024]</span>
+            Selected as a <i>"Women Executive Shadow Program"</i> at Adobe and start working with amazing Mentor, Nathan Farner!
+        </div>
+        <div class="news-item">
+            <span class="date">[Feb 2024]</span>
+            Starting working on (M)-LLM to build "agentic experience".
+        </div>
+        <div class="news-item">
+            <span class="date">[Dec 2023]</span>
+              One our most comprehensvie work "Early Attrition Prediction for Web-Based Interpretation Bias Modification to Reduce Anxious Thinking: A Machine Learning Study" work has been accepted to <strong>JMIR Mental Health 2024</strong>.
+        </div>
+        <div class="news-item">
+            <span class="date">[Dec 2023]</span>
+            Our <a href="https://europepmc.org/article/ppr/ppr824626" target="_blank" style="color:#2b9ec0;">work</a> has been accepted to <strong>PLOS Digital Health 2024</strong>.
+        </div>
+        <div class="news-item">
+            <span class="date">[Dec 2023]</span>
+            I am attending at <a href="https://neurips.cc/Conferences/2023" target="_blank" style="color:#2b9ec0;">NeurIPS</a> let's connect.
+        </div>
+        <div class="news-item">
+            <span class="date">[June 2022]</span>
+            Passed my Ph.D thesis defense!!!! :)
+        </div>
+        <div class="news-item">
+            <span class="date">[Jun 2022]</span>
+            My brilliant capstone's team successfully present <a href="https://ieeexplore.ieee.org/document/9799419" target = "_blank" style="color:#2b9ec0;">"DARA: Development of a Chatbot Support System for an Anxiety Reduction Digital Intervetion"</a> at <a href="https://engineering.virginia.edu/sieds" target = "_blank" style="color:#2b9ec0;">SIEDS</a> Conference 2022
+        </div>
+        <div class="news-item">
+            <span class="date">[April 2022]</span>
+            Awarded <strong>All-University Graduate Teaching Award</strong>! Thanks to my mentors <a href="https://engineering.virginia.edu/faculty/laura-barnes" target = "_blank" style="color:#2b9ec0;">Dr. Laura Banres</a> and <a href="https://engineering.virginia.edu/faculty/julianne-quinn" target = "_blank" style="color:#2b9ec0;">Dr. Julianne Quinn</a>.
+        </div>
+        <div class="news-item">
+            <span class="date">[April 2022]</span>
+            Awarded <strong>Louic T. Rader Outstanding Graduate</strong> Student.
+        </div>
+        <div class="news-item">
+            <span class="date">[March 2022]</span>
+            Awarded <a href="https://www.linkedin.com/posts/activity-6913209531560796160-b6_S?utm_source=linkedin_share&utm_medium=member_desktop_web" target = "_blank" style="color:#2b9ec0;">UVA Engineering Link Award</a></i> in partnership with <strong>Leidos</strong>.
+        </div>
+        <div class="news-item">
+            <span class="date">[March 2022]</span>
+            My reflection on <strong>Teaching Fellow Program</strong> at UVA can be found <a href="https://engineering.virginia.edu/current-students/current-graduate-students/teaching-fellow-program-tfp/interview-sonia-baee" target = "_blank" style="color:#2b9ec0;">here</a>.
+        </div>
+        <div class="news-item">
+            <span class="date">[Oct 2021]</span>
+            Presenting <a href="/projects/medirl-eyecar/medirl-eyecar.html" target="_blank" style="color:#2b9ec0;">our work</a> at <strong>ICCV 2021</strong>.
+        </div>
+        <div class="news-item">
+            <span class="date">[November 2021]</span>
+            Passed my PhD proposal presentation and exam!!! :) 
+        </div>
+        <div class="news-item">
+            <span class="date">[Oct 2021]</span>
+            Awarded <strong>Endowed Graduate Fellowship</strong> at UVA.
+        </div>
+        <div class="news-item">
+            <span class="date">[Oct 2021]</span>
+            Our <a href="https://dl.acm.org/doi/abs/10.1145/3411764.3445563" target="_blank" style="color:#2b9ec0;">work</a> has been accepted to <strong>CHI 2021</strong>.
+        </div>
+        <div class="news-item">
+            <span class="date">[July 2021]</span>
+            Our <a href="https://www.sciencedirect.com/science/article/pii/S0005796721000632" style="color:#2b9ec0;" target="_blank">work</a> has been accepted to <strong>Behaviour research and therapy 2021</strong>.
+        </div>
+        <div class="news-item">
+            <span class="date">[June 2021]</span>
+            Our <a href="https://dl.acm.org/doi/abs/10.1145/3411764.3445563" target="_blank" style="color:#2b9ec0;">work</a> has been accepted to <strong>CHI 2021</strong>.
+        </div>
+        <div class="news-item">
+            <span class="date">[June 2021]</span>
+            Awarded a GHC Student Scholarship to attend the 2021 Virtual <a href="https://ghc.anitab.org/" target = "_blank" style="color:#2b9ec0;">Grace Hopper Celebration</a>.
+        </div>
+        <div class="news-item">
+            <span class="date">[May 2021]</span>
+            Starting my internship at <a href="https://www.deliberate.ai/" target = "_blank" style="color:#2b9ec0;">Deliberate AI</a>, going to work on ML-models to not only help the patients but also pychologiest.
+        </div>
+        <div class="news-item">
+            <span class="date">[June 2021]</span>
+            Co-teaching <a href="https://sys-4021-6021.github.io/" target="_blank" style="color:#2b9ec0;">SYS4021/6021:Linear Statistical Models</a> in Fall 2021. 
+        </div>
+        <div class="news-item">
+            <span class="date">[May 2021]</span>
+            Awarded <a href="https://engineering.virginia.edu/graduate-teaching-internship-gti-program" target="_blank" style="color:#2b9ec0;">Teaching Fellow Fellowship</a> for Fall 2021. 
+        </div>
+        <div class="news-item">
+            <span class="date">[Oct 2020]</span>
+            Our <a href="https://dl.acm.org/doi/abs/10.1145/3421937.3421971" target="_blank" style="color:#2b9ec0;">work</a> has been accepted to <strong>PervasiveHealth 2020</strong>.
+        </div>
+        <div class="news-item">
+            <span class="date">[Oct 2020]</span>
+            Our <a href="https://dl.acm.org/doi/abs/10.1145/3415215" target="_blank" style="color:#2b9ec0;">work</a> has been accepted to <strong>CSCW 2020</strong>.
+        </div>
+        <div class="news-item">
+            <span class="date">[Jan 2020]</span>
+            Starting to mentored brilliant high-schoolers UVA <a href="https://news.virginia.edu/content/tale-two-labs-uva-engineers-collaborate-charlottesville-high-school-students" target="_blank" style="color:#2b9ec0;">UVA Engineers Collaborate With Charlottesville High School Students</a>. 
+        </div>
+        <div class="news-item">
+            <span class="date">[Dec 2019]</span>
+            Our <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/da.22970" target="_blank" style="color:#2b9ec0;">work</a> has been accepted to <strong>Depression and Anxiety 2019</strong>.
+        </div>
+
+    </section>
+
+    
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+         
+        <div class="publication">
+            <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Baee_MEDIRL_Predicting_the_Visual_Attention_of_Drivers_via_Maximum_Entropy_ICCV_2021_paper.html">Medirl: Predicting the visual attention of drivers via maximum entropy deep inverse reinforcement learning</a>
+            <div class="authors">
+                <span class="highlight">Sonia Baee</span>, E Pakdamanian, I Kim, L Feng, V Ordonez, L Barnes
+            </div>
+            <div class="venue">ICCV 2021</div>
+            <div class="tags">
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Inverse Reinforcement Learning</span>
+                <span class="tag">Behavioral Modeling</span>
+                <span class="tag">User Activity</span>
+            </div>
+        </div>
+        <div class="publication">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3411764.3445563">Deeptake: Prediction of driver takeover behavior using multimodal data</a>
+            <div class="authors">
+                Erfan Pakdamanian, <span class="highlight">Sonia Baee</span>, S Sheng, S Heo, S Kraus, L Feng
+            </div>
+            <div class="venue">CHI 2021</div>
+            <div class="tags">
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Multimodal analysis</span>
+                <span class="tag">Behavioral Modeling</span>
+                <span class="tag">User Activity</span>
+            </div>
+        </div>
+        <div class="publication">
+            <a href="https://files.osf.io/v1/resources/37k8n/providers/osfstorage/65e5ca09719c0601d2d49f69?format=pdf&action=download&direct&version=1">Web-based interpretation bias training to reduce anxiety: A sequential multiple-assignment randomized trial</a>
+            <div class="authors">
+                <span class="highlight">Sonia Baee</span>, Coauthor One
+            </div>
+            <div class="venue">PLOS Digital Health 2024</div>
+            <div class="tags">
+                <span class="tag">Digital Health</span>
+                <span class="tag">Mental Health</span>
+                <span class="tag">Behavioral Modeling</span>
+                <span class="tag">Engagement</span>
+                <span class="tag">User Activity</span>
+            </div>
+        </div>
+        <div class="publication">
+            <a href="https://europepmc.org/article/ppr/ppr824626">Behavioral Engagement and Psychosocial Outcomes in Web-Based Interpretation Bias Training for Anxiety</a>
+            <div class="authors">
+                AFV de la Garza Evia, JW Eberle,<span class="highlight"> Sonia Baee</span>, EC Wolfe, D Funk, B Teachman, L Barnes
+            </div>
+            <div class="venue">PLOS Digital Health 2024</div>
+            <div class="tags">
+                <span class="tag">Digital Health</span>
+                <span class="tag">Mental Health</span>
+                <span class="tag">Behavioral Modeling</span>
+                <span class="tag">Engagement</span>
+                <span class="tag">User Activity</span>
+            </div>
+        </div>
+        <div class="publication">
+            <a href="https://www.liebertpub.com/doi/full/10.1089/tmr.2022.0035">Use of a mobile health intervention by older versus younger people with HIV: analysis of usage, social support, and network interactions</a>
+            <div class="authors">
+                abor E Flickinger, Breanna R Campbell, Allyson Timm, <span class="highlight">Sonia Baee</span>, D Datta, S V Shenoi, J Rozanova, R Dillingham
+            </div>
+            <div class="venue">Telemedicine 2022</div>
+            <div class="tags">
+                <span class="tag">Mobile Health</span>
+                <span class="tag">Network</span>
+                <span class="tag">Behavioral Modeling</span>
+                <span class="tag">User Activity</span>
+            </div>
+        </div>
+        <div class="publication">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3415215">A framework for understanding the relationship between social media discourse and mental health</a>
+            <div class="authors">
+                Sanjana Mendu, Anna Baglione, <span class="highlight">Sonia Baee</span>, C Wu, B Ng, A Shaked, G Clore, Laura Barnes
+            </div>
+            <div class="venue">CSCW 2020</div>
+            <div class="tags">
+                <span class="tag">Digital Health</span>
+                <span class="tag">Mental Health</span>
+                <span class="tag">Social Media</span>
+                <span class="tag">Network</span>
+                <span class="tag">User Activity</span>
+            </div>
+        </div>
+         <div class="publication">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3421937.3421971">A Framework for Addressing the Risks and Opportunities In AI-Supported Virtual Health Coaches</a>
+            <div class="authors">
+                <span class="highlight">Sonia Baee</span>, M Rucker, A Baglione, A Mawulolo K., L Barnes
+            </div>
+            <div class="venue">PCT 2020</div>
+            <div class="tags">
+                <span class="tag">AI-Assistant</span>
+                <span class="tag">Safety</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="projects">
+        <h2>Research Projects</h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Description of research project, methodology, and key findings. Focus on technical depth and academic relevance.</p>
+            <div class="tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">Deep Learning</span>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies">
+            <p>During my spare time you will find me ...</p>
+            <div class="tags">
+                <span class="tag">Cooking/Baking</span>
+                <span class="tag">Reading</span>
+                <span class="tag">Working out</span>
+                <span class="tag">Driving</span>
+                <span class="tag">Riding Motor Bike</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>Email: sonia.baee [at] gmail.com</div>
+        <div class="contact-links">
+            <a href="https://scholar.google.com/citations?user=HD3EENQAAAAJ&hl=en">CV</a>
+            <a href="https://scholar.google.com/citations?user=HD3EENQAAAAJ&hl=en">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/sonia-baee/">LinkedIn</a>
+            <a href="https://github.com/soniabaee">Github</a>
+        </div>
+    </footer>
+</body>
+</html>
