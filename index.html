@@ -64,11 +64,6 @@
             margin-bottom: 1.5rem;
         }
 
-        .news-item, .publication {
-            margin-bottom: .3rem;
-            padding-left: 0.5rem;
-            position: relative;
-        }
 
         .news-item::before {
             content: "•";
@@ -77,12 +72,22 @@
             color: #2980b9;
         }
 
+        /* Changed to */
+        .news-item, .publication {
+            margin-bottom: .3rem;
+            padding-left: 0.5rem;
+            position: relative;
+            font-size: 0.95rem; /* Added to reduce font size */
+            line-height: 1.5; /* Added for better readability */
+        }
+
         .date {
             color: #7f8c8d;
-            font-size: 0.9rem;
+            font-size: 0.85rem; /* Reduced from 0.9rem */
             margin-right: 0.3rem;
         }
 
+        
         .publication {
             padding-left: 0;
         }
@@ -319,11 +324,7 @@
         <h2>News</h2>
         <div class="news-item">
             <span class="date">[March 2024]</span>
-            Selected as a <i>"Women Executive Shadow Program"</i> at Adobe and start working with amazing mentor, <a href="https://www.linkedin.com/in/nathan-farner/" target="_blank" style="color:#2b9ec0;>Nathan Farner</a>!
-        </div>
-        <div class="news-item">
-            <span class="date">[Feb 2024]</span>
-            Starting working on (M)-LLM to build "agentic experience".
+            Selected as a <i>"Women Executive Shadow Program"</i> at Adobe and start working with amazing mentor,  <a href="https://www.linkedin.com/in/nathan-farner/" target="_blank" style="color:#2b9ec0;">Nathan Farner</a>!
         </div>
         <div class="news-item">
             <span class="date">[Dec 2023]</span>
@@ -336,6 +337,10 @@
         <div class="news-item">
             <span class="date">[Dec 2023]</span>
             I am attending at <a href="https://neurips.cc/Conferences/2023" target="_blank" style="color:#2b9ec0;">NeurIPS</a> let's connect.
+        </div>
+        <div class="news-item">
+            <span class="date">[Jan 2023]</span>
+            Starting working on MLLM to build "agentic experience".
         </div>
         <div class="news-item">
             <span class="date">[June 2022]</span>
@@ -518,18 +523,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <section id="projects">
-        <h2>Research Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Description of research project, methodology, and key findings. Focus on technical depth and academic relevance.</p>
-            <div class="tags">
-                <span class="tag">PyTorch</span>
-                <span class="tag">Deep Learning</span>
-            </div>
-        </div>
-    </section> -->
 
     <section id="hobbies">
         <h2>Hobbies</h2>
